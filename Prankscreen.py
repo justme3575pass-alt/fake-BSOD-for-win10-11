@@ -106,7 +106,7 @@ def  bsod():
     percentage.place(x=0.1*w,y=0.525*h)
     def risingpercent():
         nonlocal percent,percentage
-        ctypes.windll.user32.mouse_event(0x0001, 1, 0, 0, 0)  # Move +1 X
+        ctypes.windll.user32.mouse_event(0x0001, 1, 0, 0, 0)
         ctypes.windll.user32.mouse_event(0x0001, -1, 0, 0, 0)
         if percent<100:
             percent+=1
